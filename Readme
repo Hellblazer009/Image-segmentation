@@ -1,0 +1,24 @@
+## Summary: 
+# code for segmenting boundaries of iris and pupil in human eyes for downstream application of eye based motion control. 
+# U-Net implementation with 4 layers down and up, one FC in the middle.
+# training data comprises eye image and annotated mask with boundary separations
+
+
+## Installation:
+# Jupyter notebook format installation. All modalities in the header of the code. Use !pip install or npm install for individual modules where necessary.
+
+## Basic use:
+
+### Preprocessing: specify training and test image dimensions for designing U-Net arch
+# specify file location or directory to import datasets
+# resize images to specification
+# designate masks as labels/output for training
+# repeat for test set
+
+
+### U-Net model: vectorize input tensor according to image dimensions and number of channels.
+# layer design is manual, downsampling and upsampling layers dependent on image dimensions
+# can add more FC layers if necessary
+# kernel initialization and activation functions as specified in code example
+# drop out as specified in code example
+# check model summary for arch and verification
